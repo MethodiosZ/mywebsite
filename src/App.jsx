@@ -86,7 +86,7 @@ export default function App() {
 		{init && (
 			<Particles
 			    id="tsparticles"
-			    className="absolute inset-0 h-full w-full -z-10"
+			    className="absolute inset-0 h-full w-full z-0"
 			    options={{
 				background: {color: {value: "transparent" } },
 				fpsLimit: 60,
@@ -95,8 +95,8 @@ export default function App() {
 				    modes: { repulse: { distance: 100, duration: 0.4 } },
 				},
 				particles: {
-				    color: { value: darkMode ? "60a5fa" : "#3b82f6" },
-				    links: { color: darkMode ? "60a5fa" : "#3b82f6", distance: 150, enable: true, opacity: 0.3, width: 1 },
+				    color: { value: darkMode ? "#60a5fa" : "#3b82f6" },
+				    links: { color: darkMode ? "#60a5fa" : "#3b82f6", distance: 150, enable: true, opacity: 0.3, width: 1 },
 				    move: { enable: true, speed: 2 },
 				    number: { value: 50 },
 				    opacity: { value: 0.5 },
