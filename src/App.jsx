@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Particles, {initParticlesEngine } from "@tsparticles/react";
 import {loadSlim } from "@tsparticles/slim";
@@ -107,7 +107,7 @@ export default function App() {
 			/>
 		)}
 		<h2 className="text-3xl md:text-6xl font-bold mb-4">Hi, I'm Methodios</h2>
-		<Typed
+		<ReactTyped
 		    strings={[
 			"Computer Scientist",
 			"Web Developer",
