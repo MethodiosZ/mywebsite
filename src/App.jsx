@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { Github, Linkedin, Mail } from "lucide-react";
-import Particles, {initParticlesEngine } from "@tsparticles/react";
-import {loadSlim } from "@tsparticles/slim";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 import "./index.css";
 
 export default function App() {
@@ -103,6 +103,7 @@ export default function App() {
 				    shape: { type: "circle" },
 				    size: { value: { min: 1, max: 4 } },
 				},
+				detectRetina: true,
 			    }}
 			/>
 		)}
@@ -118,14 +119,14 @@ export default function App() {
 		    loop
 		    className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
 		/>
-		<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
+		<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 py-3">
+		    <div className="p-4 bg-blue-150 dark:bg-gray-800 rounded-lg shadow">
 			👨‍ <span className="font-bold">10+</span> Projects
 		    </div>
-		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
+		    <div className="p-4 bg-blue-150 dark:bg-gray-800 rounded-lg shadow">
 			🎓 <span className="font-bold">CS Graduate</span>
 		    </div>
-		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
+		    <div className="p-4 bg-blue-150 dark:bg-gray-800 rounded-lg shadow">
 			💼 <span className="font-bold">Open to Work</span>
 		    </div>
 		</div>
