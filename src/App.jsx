@@ -57,7 +57,7 @@ export default function App() {
     };
     
     return (
-	<div className="relative p-6 dark:bg-gray-900 dark:text-blue-100 bg-white text-gray-800">
+	<div className="p-6 dark:bg-gray-900 dark:text-blue-100 bg-white text-gray-800">
 	    {/* Navbar */}
 	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800">
 		<button
@@ -88,7 +88,7 @@ export default function App() {
 			    id="tsparticles"
 			    className="absolute inset-0 h-full w-full -z-10"
 			    options={{
-				background: {color: {value: darkMode ? "#111827" : "#ffffff" } },
+				background: {color: {value: "transparent" } },
 				fpsLimit: 60,
 				interactivity: {
 				    events: {onHover: { enable: true, mode: "repulse" } },
