@@ -1,10 +1,24 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Typed from "react-typed";
+import { Github, Linkedin, Mail } from "lucide-react";
+import Particles, {initParticlesEngine } from "@tsparticles/react";
+import {loadSlim } from "@tsparticles/slim";
 import "./index.css";
 
 export default function App() {
     const [showScroll, setShowScroll] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
+    const [init, setInit] = useState(false);
+
+    useEffect(() => {
+	//Particles Initialize
+	initParticlesEngine(async (engine) => {
+	    await loadSlim(engine);
+	}).then(() => {
+	    setInit(true);
+	});
+    }, []);
     
     useEffect(() => {
 	//Local Preference
@@ -67,10 +81,53 @@ export default function App() {
 		initial={{ opacity: 0, y: -50 }}
 		animate={{ opacity: 1, y: 0 }}
 		transition={{ duration: 0.8 }}
-		className="min-h-screen flex flex-col justify-center items-center text-center p-10"
+		className="relative min-h-screen flex flex-col justify-center items-center text-center p-10 overflow-hidden"
 	    >
+		{init && (
+			<Particles
+			    id="tsparticles"
+			    className="absolute inset-0 -z-10"
+			    options={{
+				background: {color: {value: darkMode ? "#111827" : "#ffffff" } },
+				fpsLimit: 60,
+				interactivity: {
+				    events: {onHover: { enable: true, mode: "repulse" } },
+				    modes: { repulse: { distance: 100, duration: 0.4 } },
+				},
+				particles: {
+				    color: { value: darkMode ? "60a5fa" : "#3b82f6" },
+				    links: { color: darkMode ? "60a5fa" : "#3b82f6", distance: 150, enable: true, opacity: 0.3, width: 1 },
+				    move: { enable: true, speed: 2 },
+				    number: { value: 50 },
+				    opacity: { value: 0.5 },
+				    shape: { type: "circle" },
+				    size: { value: { min: 1, max: 4 } },
+				},
+			    }}
+			/>
+		)}
 		<h2 className="text-3xl md:text-6xl font-bold mb-4">Hi, I'm Methodios</h2>
-		<p className="text-lg md:text-2xl mb-6">Computer Scientist | Web Developer | Software Engineer</p>
+		<Typed
+		    strings={[
+			"Computer Scientist",
+			"Web Developer",
+			"Cybersecurity Enthusiast",
+		    ]}
+		    typeSpeed={60}
+		    backSpeed={40}
+		    loop
+		    className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
+		/>
+		<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
+			👨‍ <span className="font-bold">10+</span> Projects
+		    </div>
+		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
+			🎓 <span className="font-bold">CS Graduate</span>
+		    </div>
+		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
+			💼 <span className="font-bold">Open to Work</span>
+		    </div>
 		<div className="flex items-center font-large">
 		    <a
 			href={'${import.meta.env.BASE_URL}CV.pdf'}
@@ -126,14 +183,19 @@ export default function App() {
 		<h3 className="text-3xl font-bold mb-4">Contact</h3>
 		<p className="mb-6">Feel free to reach out for collaborations or job opportunities.</p>
 		<div className="flex justify-center space-x-6 text-lg font-medium">
-		    <a href="mailto:methzaxa@gmail.com" className="px-3 py-2 rounded-lg hover:bg-blue-400 dark:hover:bg-gray-500 transition">Email</a>
+		    <a
+			href="mailto:methzaxa@gmail.com"
+			className="px-3 py-2 rounded-lg hover:bg-blue-400 dark:hover:bg-gray-500 transition"
+		    >
+			<Mail size={28} />
+		    </a>
 		    <a
 			href="https://linkedin.com/in/methodios-zacharioudakis-771941261/"
 			target="_blank"
 			rel="noopener noreferrer"
 			className="px-3 py-2 rounded-lg hover:bg-blue-400 dark:hover:bg-gray-500 transition"
 		    >
-			LinkedIn
+			<Linkedin size={28} />
 		    </a>
 		    <a
 			href="https://github.com/MethodiosZ"
@@ -141,7 +203,7 @@ export default function App() {
 			rel="noopener noreferrer"
 			className="px-3 py-2 rounded-lg hover:bg-blue-400 dark:hover:bg-gray-500 transition"
 		    >
-			GitHub
+			<Github size={28} />
 		    </a>
 		</div>
 	    </section>
