@@ -73,7 +73,7 @@ export default function App() {
 		<p className="text-lg md:text-2xl mb-6">Computer Scientist | Web Developer | Software Engineer</p>
 		<div className="flex items-center font-large">
 		    <a
-			href={`${import.meta.env.BASE_URL}CV.pdf`}
+			href={'${import.meta.env.BASE_URL}CV.pdf'}
 			target="_blank"
 			rel="noopener noreferrer"
 			className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
@@ -81,7 +81,7 @@ export default function App() {
 			View Resume
 		    </a>
 		    <a
-			href={`${import.meta.env.BASE_URL}CV.pdf`}
+			href={'${import.meta.env.BASE_URL}CV.pdf'}
 			download="MethodiosZacharioudakis_Resume.pdf"
 			className="px-3 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
 		    >
