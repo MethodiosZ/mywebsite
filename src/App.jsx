@@ -169,7 +169,7 @@ export default function App() {
 
 		    {/*Uptime*/}
 		    <img
-			src="https://img.shields.io/uptimerobot/ratio/m801470619?color=blue"
+			src="https://img.shields.io/uptimerobot/ratio/m801470619-6a4aa2fa3a68863bc7f4f7c2?color=blue"
 			alt="Uptime"
 			className="h-5"
 		    />
