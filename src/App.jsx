@@ -128,6 +128,7 @@ export default function App() {
 		    <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow">
 			💼 <span className="font-bold">Open to Work</span>
 		    </div>
+		</div>
 		<div className="flex items-center font-large">
 		    <a
 			href={'${import.meta.env.BASE_URL}CV.pdf'}
