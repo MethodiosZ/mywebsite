@@ -57,7 +57,7 @@ export default function App() {
     };
     
     return (
-	<div className="p-6 dark:bg-gray-900 dark:text-blue-100 bg-white text-gray-800">
+	<div className="relative p-6 dark:bg-gray-900 dark:text-blue-100 bg-white text-gray-800">
 	    {/* Navbar */}
 	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800">
 		<button
@@ -86,7 +86,7 @@ export default function App() {
 		{init && (
 			<Particles
 			    id="tsparticles"
-			    className="absolute inset-0 -z-10"
+			    className="absolute inset-0 h-full w-full -z-10"
 			    options={{
 				background: {color: {value: darkMode ? "#111827" : "#ffffff" } },
 				fpsLimit: 60,
@@ -120,13 +120,13 @@ export default function App() {
 		    className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
 		/>
 		<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 py-3">
-		    <div className="p-4 bg-blue-150 dark:bg-gray-800 rounded-lg shadow">
+		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
 			👨‍ <span className="font-bold">10+</span> Projects
 		    </div>
-		    <div className="p-4 bg-blue-150 dark:bg-gray-800 rounded-lg shadow">
+		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
 			🎓 <span className="font-bold">CS Graduate</span>
 		    </div>
-		    <div className="p-4 bg-blue-150 dark:bg-gray-800 rounded-lg shadow">
+		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
 			💼 <span className="font-bold">Open to Work</span>
 		    </div>
 		</div>
