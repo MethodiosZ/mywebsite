@@ -155,7 +155,7 @@ export default function App() {
 		<div className="flex justify-center space-x-6">
 		    {/*Visitor Counter*/}
 		    <img
-			src="https://komarev.com/ghpvc/?username=MethodiosZ&repo=mywebsite&style=flat-sqaure&color=blue"
+			src="https://visitor-badge.laobi.icu/badge?page_id=MethodiosZ.mywebsite&style=flat-sqaure&color=blue"
 			alt="Visitor Counter"
 			className="h-5"
 		    />
