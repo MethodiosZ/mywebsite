@@ -148,7 +148,32 @@ export default function App() {
 
 	    {/* Footer */}
 	    <footer className="p-6 text-center border-t">
-		<p>© {new Date().getFullYear()} Methodios Zacharioudakis. All rights reserved.</p>
+		<p>
+		    © {new Date().getFullYear()} Methodios Zacharioudakis. All rights reserved.
+		</p>
+
+		<div className="flex justify-center space-x-6">
+		    {/*Visitor Counter*/}
+		    <img
+			src="https://komarev.com/ghpvc/?username=MethodiosZ&repo=mywebsite&style=flat-sqaure&color=blue"
+			alt="Visitor Counter"
+			className="h-5"
+		    />
+
+		    {/*Last Commit*/}
+		    <img
+			src="https://img.shields.io/github/last-commit/MethodiosZ/mywebsite?color=blue"
+			alt="Last Commit"
+			className="h-5"
+		    />
+
+		    {/*Uptime*/}
+		    <img
+			src="https://img.shields.io/uptimerobot/ratio/m801470619?color=blue"
+			alt="Uptime"
+			className="h-5"
+		    />
+		</div>
 	    </footer>
 
 	    {/* Scroll to Top button */}
