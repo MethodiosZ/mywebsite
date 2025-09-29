@@ -63,7 +63,7 @@ export default function App() {
 	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800 relative z-10">
 		<button
 		    onClick={()  => setDarkMode(prev => !prev)}
-		    className="ml-4 px-3 py-1 absolute top-8 right-8 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
+		    className="ml-4 px-3 py-1 absolute top-7 right-7 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
 		>
 		    {darkMode ? "☀️" : "🌙"}
 		</button>
@@ -154,9 +154,13 @@ export default function App() {
 	    <section id="about" className="max-w-4xl mx-auto p-10 shadow-md bg-blue-200 dark:bg-gray-700 relative z-10">
 		<h3 className="text-3xl font-bold mb-4">About Me</h3>
 		<p className="text-lg leading-relaxed">
-		    I'm a computer scientist with strong skills in backend development, database design,
-		    and cybersecurity. I recently finished my degree and I'm eager to contribute to
-		    real-world projects.
+		    I'm a recent Computer Science graduate with deep passion for programming
+		    and continuous learning. During my studies I developed a solid foundation
+		    in software development, working with technologies such as Java, Python, C and SQL.
+		    Beyond coursework, I've dedicated myself to personal projects and hands-on
+		    practice-building applications, with consistenly challenging myself to learn
+		    new technologies. I take great pride in writing clean, efficient code and thrive
+		    on solving complex problems with practical, scalable solutions.
 		</p>
 	    </section>
 
