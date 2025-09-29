@@ -26,7 +26,7 @@ function Uptimedisplay() {
 	    });
     }, []);
 
-    return {
+    return (
 	<span>
 	    {uptime ? 'Up for ${uptime}' : "Loading uptime..."}
 	</span>
