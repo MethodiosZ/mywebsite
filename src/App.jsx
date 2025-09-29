@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import Uptimedisplay from "./Uptimedisplay";
 import "./index.css";
 
 export default function App() {
@@ -232,11 +233,7 @@ export default function App() {
 		    />
 
 		    {/*Uptime*/}
-		    <img
-			src="https://img.shields.io/uptimerobot/status/m801470619-6a4aa2fa3a68863bc7f4f7c2?color=blue"
-			alt="Uptime"
-			className="h-5"
-		    />
+		    <Uptimedisplay />
 		</div>
 	    </footer>
 
