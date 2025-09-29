@@ -59,7 +59,7 @@ export default function App() {
     return (
 	<div className="p-6 dark:bg-gray-900 dark:text-blue-100 bg-white text-gray-800">
 	    {/* Navbar */}
-	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800 z-10">
+	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800 relative z-10">
 		<button
 		    onClick={()  => setDarkMode(prev => !prev)}
 		    className="ml-4 px-3 py-1 absolute top-8 right-8 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
@@ -107,47 +107,45 @@ export default function App() {
 			    }}
 			/>
 		)}
-		<div className="z-10">
-		    <h2 className="text-3xl md:text-6xl font-bold mb-4">Hi, I'm Methodios</h2>
-		    <ReactTyped
-			strings={[
-			    "Computer Scientist",
-			    "Web Developer",
-			    "Cybersecurity Enthusiast",
+		<h2 className="text-3xl md:text-6xl font-bold mb-4">Hi, I'm Methodios</h2>
+		<ReactTyped
+		    strings={[
+			"Computer Scientist",
+			"Web Developer",
+			"Cybersecurity Enthusiast",
 			]}
-			typeSpeed={60}
-			backSpeed={40}
-			loop
-			className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
-		    />
-		    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 py-3">
-			<div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
-			    👨‍ <span className="font-bold">10+</span> Projects
-			</div>
-			<div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
-			    🎓 <span className="font-bold">CS Graduate</span>
-			</div>
-			<div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
-			    💼 <span className="font-bold">Open to Work</span>
-			</div>
+		    typeSpeed={60}
+		    backSpeed={40}
+		    loop
+		    className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
+		/>
+		<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 py-3">
+		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
+			👨‍ <span className="font-bold">10+</span> Projects
 		    </div>
-		    <div className="flex items-center font-large">
-			<a
-			    href={'${import.meta.env.BASE_URL}CV.pdf'}
-			    target="_blank"
-			    rel="noopener noreferrer"
-			    className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
-			>
-			    View Resume
-			</a>
-			<a
-			    href={'${import.meta.env.BASE_URL}CV.pdf'}
-			    download="MethodiosZacharioudakis_Resume.pdf"
-			    className="px-3 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
-			>
-			    ↓
-			</a>
+		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
+			🎓 <span className="font-bold">CS Graduate</span>
 		    </div>
+		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
+			💼 <span className="font-bold">Open to Work</span>
+		    </div>
+		</div>
+		<div className="flex items-center font-large">
+		    <a
+			href={'${import.meta.env.BASE_URL}CV.pdf'}
+			target="_blank"
+			rel="noopener noreferrer"
+			className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+		    >
+			View Resume
+		    </a>
+		    <a
+			href={'${import.meta.env.BASE_URL}CV.pdf'}
+			download="MethodiosZacharioudakis_Resume.pdf"
+			className="px-3 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+		    >
+			↓
+		    </a>
 		</div>
 	    </motion.section>
 
