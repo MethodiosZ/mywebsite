@@ -152,7 +152,7 @@ export default function App() {
 
 	    {/* About Section */}
 	    <section id="about" className="max-w-4xl mx-auto p-10 shadow-md bg-blue-200 dark:bg-gray-700 relative z-10">
-		<h3 className="text-3xl font-bold mb-4">About Me</h3>
+		<h3 className="text-3xl font-bold mb-4 text-center">About Me</h3>
 		<p className="text-lg leading-relaxed">
 		    I'm a recent Computer Science graduate with deep passion for programming
 		    and continuous learning. During my studies I developed a solid foundation
@@ -165,23 +165,95 @@ export default function App() {
 	    </section>
 
 	    {/* Projects Section */}
-	    <section id="projects" className="max-w-5xl mx-auto p-10 relative z-10">
-		<h3 className="text-3xl font-bold mb-8">Projects</h3>
-		<div className="grid md:grid-cols-2 gap-6">
-		    {[1, 2, 3].map((project) => (
-			<motion.div
-			    key={project}
-			    whileHover={{ scale: 1.05 }}
-			    className="p-6 border rounded-2xl shadow hover:shadow-lg transition"
-			>
-			    <h4 className="text-xl font-semibold mb-2">Project {project}</h4>
-			    <p className="mb-3">Short description of the project, tech stack, and purpose.</p>
-			    <div className="flex space-x-3">
-				<a href="#" className="text-blue-600 hover:underline">GitHub</a>
-				<a href="#" className="text-blue-600 hover:underline">Live Demo</a>
-			    </div> 
-			</motion.div>
-		    ))}
+	    <section id="projects" className="max-w-6xl mx-auto p-10 relative z-10">
+		<h3 className="text-3xl font-bold mb-8 text-center">Projects</h3>
+		<div className="grid md:grid-cols-2 gap-8">
+		    
+		    {/* Project 1 */}
+		    <motion.div
+			whileHover={{ scale: 1.03 }}
+			className="p-6 bg-white dark:bg-gray-800 border rounded-2xl shadow hover:shadow-xl transition"
+		    >
+			<h4 className="text-xl font-semibold mb-2">Event Booking System</h4>
+			<p className="mb-3 text-gray-700 dark:text-gray-300">
+			    A web-based event booking platform built with <strong>Java</strong> (servlets) and <strong>MySQL</strong>, 
+			    featuring user authentication and dynamic event management.
+			</p>
+			<div className="flex flex-wrap gap-2 mb-3">
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Java</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">MySQL</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Tomcat</span>
+			</div>
+			<div className="flex space-x-3">
+			    <a href="https://github.com/MethodiosZ/EventManager" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+				GitHub
+			    </a>
+			</div>
+		    </motion.div>
+
+		    {/* Project 2 */}
+		    <motion.div
+			whileHover={{ scale: 1.03 }}
+			className="p-6 bg-white dark:bg-gray-800 border rounded-2xl shadow hover:shadow-xl transition"
+		    >
+			<h4 className="text-xl font-semibold mb-2">Cancer Sample Analysis Pipeline</h4>
+			<p className="mb-3 text-gray-700 dark:text-gray-300">
+			    Integrated bioinformatics pipeline for analyzing cancer samples and discovering biological correlations, 
+			    built during my thesis project.
+			</p>
+			<div className="flex flex-wrap gap-2 mb-3">
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Python</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Bash</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Bioinformatics</span>
+			</div>
+			<div className="flex space-x-3">
+			    <a href="https://github.com/MethodiosZ/ExomeTumorClustering" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+				GitHub
+			    </a>
+			</div>
+		    </motion.div>
+
+		    {/* Project 3 */}
+		    <motion.div
+			whileHover={{ scale: 1.03 }}
+			className="p-6 bg-white dark:bg-gray-800 border rounded-2xl shadow hover:shadow-xl transition"
+		    >
+			<h4 className="text-xl font-semibold mb-2">Personal Portfolio Website</h4>
+			<p className="mb-3 text-gray-700 dark:text-gray-300">
+			    This very site — built with <strong>React</strong>, <strong>Vite</strong>, <strong>TailwindCSS</strong>, and deployed on <strong>GitHub Pages</strong>.
+			</p>
+			<div className="flex flex-wrap gap-2 mb-3">
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">React</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Tailwind</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Vite</span>
+			</div>
+			<div className="flex space-x-3">
+			    <a href="https://github.com/MethodiosZ/mywebsite" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+				GitHub
+			    </a>
+			</div>
+		    </motion.div>
+
+		    {/* Project 4 */}
+		    <motion.div
+			whileHover={{ scale: 1.03 }}
+			className="p-6 bg-white dark:bg-gray-800 border rounded-2xl shadow hover:shadow-xl transition"
+		    >
+			<h4 className="text-xl font-semibold mb-2">Alpha Language Compiler</h4>
+			<p className="mb-3 text-gray-700 dark:text-gray-300">
+			    A simple compiler for Alpha Programming Language written using <strong>Lex</strong>, <strong>Yacc</strong> and <strong>C</strong>.
+			</p>
+			<div className="flex flex-wrap gap-2 mb-3">
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">C</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Yacc</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Lex</span>
+			</div>
+			<div className="flex space-x-3">
+			    <a href="https://github.com/MethodiosZ/AlphaLanguageCompiler" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+				GitHub
+			    </a>
+			</div>
+		    </motion.div>
 		</div>
 	    </section>
 
