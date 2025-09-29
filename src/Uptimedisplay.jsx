@@ -21,7 +21,7 @@ function Uptimedisplay() {
 		    const diff = Date.now() - startTime;
 		    const hours = Math.floor(diff/(1000*60*60));
 		    const min = Math.floor((diff / (1000*60)) % 60);
-		    setUptime('${hours}h ${min}m');
+		    setUptime(`${hours}h ${min}m`);
 		}
 	    });
     }, []);
