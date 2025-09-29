@@ -59,7 +59,7 @@ export default function App() {
     return (
 	<div className="p-6 dark:bg-gray-900 dark:text-blue-100 bg-white text-gray-800">
 	    {/* Navbar */}
-	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800">
+	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800 z-10">
 		<button
 		    onClick={()  => setDarkMode(prev => !prev)}
 		    className="ml-4 px-3 py-1 absolute top-8 right-8 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
@@ -95,10 +95,10 @@ export default function App() {
 				    modes: { repulse: { distance: 100, duration: 0.4 } },
 				},
 				particles: {
-				    color: { value: darkMode ? "#60a5fa" : "#3b82f6" },
-				    links: { color: darkMode ? "#60a5fa" : "#3b82f6", distance: 150, enable: true, opacity: 0.3, width: 1 },
+				    color: { value: darkMode ? "#60a5fa" : "#0568e3" },
+				    links: { color: darkMode ? "#60a5fa" : "#0568e3", distance: 150, enable: true, opacity: 0.3, width: 1 },
 				    move: { enable: true, speed: 2 },
-				    number: { value: 50 },
+				    number: { value: 60 },
 				    opacity: { value: 0.5 },
 				    shape: { type: "circle" },
 				    size: { value: { min: 1, max: 4 } },
@@ -107,50 +107,52 @@ export default function App() {
 			    }}
 			/>
 		)}
-		<h2 className="text-3xl md:text-6xl font-bold mb-4">Hi, I'm Methodios</h2>
-		<ReactTyped
-		    strings={[
-			"Computer Scientist",
-			"Web Developer",
-			"Cybersecurity Enthusiast",
-		    ]}
-		    typeSpeed={60}
-		    backSpeed={40}
-		    loop
-		    className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
-		/>
-		<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 py-3">
-		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
-			👨‍ <span className="font-bold">10+</span> Projects
+		<div className="z-10">
+		    <h2 className="text-3xl md:text-6xl font-bold mb-4">Hi, I'm Methodios</h2>
+		    <ReactTyped
+			strings={[
+			    "Computer Scientist",
+			    "Web Developer",
+			    "Cybersecurity Enthusiast",
+			]}
+			typeSpeed={60}
+			backSpeed={40}
+			loop
+			className="text-lg md:text-2xl mb-6 text-gray-800 dark:text-blue-100"
+		    />
+		    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 py-3">
+			<div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
+			    👨‍ <span className="font-bold">10+</span> Projects
+			</div>
+			<div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
+			    🎓 <span className="font-bold">CS Graduate</span>
+			</div>
+			<div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
+			    💼 <span className="font-bold">Open to Work</span>
+			</div>
 		    </div>
-		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
-			🎓 <span className="font-bold">CS Graduate</span>
+		    <div className="flex items-center font-large">
+			<a
+			    href={'${import.meta.env.BASE_URL}CV.pdf'}
+			    target="_blank"
+			    rel="noopener noreferrer"
+			    className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+			>
+			    View Resume
+			</a>
+			<a
+			    href={'${import.meta.env.BASE_URL}CV.pdf'}
+			    download="MethodiosZacharioudakis_Resume.pdf"
+			    className="px-3 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+			>
+			    ↓
+			</a>
 		    </div>
-		    <div className="p-4 bg-blue-200 dark:bg-gray-800 rounded-lg shadow">
-			💼 <span className="font-bold">Open to Work</span>
-		    </div>
-		</div>
-		<div className="flex items-center font-large">
-		    <a
-			href={'${import.meta.env.BASE_URL}CV.pdf'}
-			target="_blank"
-			rel="noopener noreferrer"
-			className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
-		    >
-			View Resume
-		    </a>
-		    <a
-			href={'${import.meta.env.BASE_URL}CV.pdf'}
-			download="MethodiosZacharioudakis_Resume.pdf"
-			className="px-3 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
-		    >
-			↓
-		    </a>
 		</div>
 	    </motion.section>
 
 	    {/* About Section */}
-	    <section id="about" className="max-w-4xl mx-auto p-10 shadow-md bg-blue-200 dark:bg-gray-700">
+	    <section id="about" className="max-w-4xl mx-auto p-10 shadow-md bg-blue-200 dark:bg-gray-700 z-10">
 		<h3 className="text-3xl font-bold mb-4">About Me</h3>
 		<p className="text-lg leading-relaxed">
 		    I'm a computer scientist with strong skills in backend development, database design,
@@ -160,7 +162,7 @@ export default function App() {
 	    </section>
 
 	    {/* Projects Section */}
-	    <section id="projects" className="max-w-5xl mx-auto p-10">
+	    <section id="projects" className="max-w-5xl mx-auto p-10 z-10">
 		<h3 className="text-3xl font-bold mb-8">Projects</h3>
 		<div className="grid md:grid-cols-2 gap-6">
 		    {[1, 2, 3].map((project) => (
@@ -181,7 +183,7 @@ export default function App() {
 	    </section>
 
 	    {/* Contact Section */}
-	    <section id="contact" className="max-w-3xl mx-auto p-10 text-center shadow-md bg-blue-300 dark:bg-gray-600">
+	    <section id="contact" className="max-w-3xl mx-auto p-10 text-center shadow-md bg-blue-300 dark:bg-gray-600 z-10">
 		<h3 className="text-3xl font-bold mb-4">Contact</h3>
 		<p className="mb-6">Feel free to reach out for collaborations or job opportunities.</p>
 		<div className="flex justify-center space-x-6 text-lg font-medium">
@@ -211,7 +213,7 @@ export default function App() {
 	    </section>
 
 	    {/* Footer */}
-	    <footer className="p-6 text-center border-t">
+	    <footer className="p-6 text-center border-t z-10">
 		<p>
 		    © {new Date().getFullYear()} Methodios Zacharioudakis. All rights reserved.
 		</p>
