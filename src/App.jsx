@@ -162,6 +162,35 @@ export default function App() {
 		    new technologies. I take great pride in writing clean, efficient code and thrive
 		    on solving complex problems with practical, scalable solutions.
 		</p>
+
+		{/* Recent Updates */}
+		<h4 className="text-2xl py-4 font-semibold mb-4">Recent Updates</h4>
+		<ul className="space-y-4 border-l-2 border-blue-600 dark:border-blue-400 pl-4">
+		    <li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">Sept 2025:</span> Attended VoxxedDays
+			    </p>
+			</div>
+		    </li>
+		    <li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">Sept 2025:</span> Started my learning path in TryHackMe.com
+			    </p>
+			</div>
+		    </li>
+		    <li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">July 2025:</span> Finished Computer Science degree 🎓
+			    </p>
+			</div>
+		    </li>
+		</ul>
 	    </section>
 
 	    {/* Projects Section */}
