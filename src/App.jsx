@@ -63,7 +63,7 @@ export default function App() {
 	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800 relative z-10">
 		<button
 		    onClick={()  => setDarkMode(prev => !prev)}
-		    className="ml-4 px-3 py-1 absolute top-5 right-5 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
+		    className="ml-4 px-3 py-1 absolute top-3 right-3 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
 		>
 		    {darkMode ? "☀️" : "🌙"}
 		</button>
@@ -350,7 +350,7 @@ export default function App() {
 			transition={{ duration: 0.6, ease: "easeInOut"}}
 			onClick={scrollTop}
 			style={{ pointerEvents: showScroll ? "auto" : "none" }}
-			className="fixed top-6 right-6 p-3 z-15 rounded-full bg-blue-500 text-white shadow-lg hover:bg-blue-600 transition"
+			className="fixed top-6 right-6 p-3 z-20 rounded-full bg-blue-500 text-white shadow-lg hover:bg-blue-600 transition"
 		    >
 			↑
 		    </motion.button>
