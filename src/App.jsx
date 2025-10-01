@@ -63,7 +63,7 @@ export default function App() {
 	    <nav className="flex justify-center items-center p-6 shadow-md bg-blue-100 dark:bg-gray-800 relative z-10">
 		<button
 		    onClick={()  => setDarkMode(prev => !prev)}
-		    className="ml-4 px-3 py-1 absolute top-6 right-6 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
+		    className="ml-4 px-3 py-1 absolute top-5 right-5 rounded dark:bg-blue-200 dark:text-white dark:hover:bg-blue-500 bg-gray-400 hover:bg-gray-600"
 		>
 		    {darkMode ? "☀️" : "🌙"}
 		</button>
