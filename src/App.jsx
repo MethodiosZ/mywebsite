@@ -170,6 +170,22 @@ export default function App() {
 			<div className="flex items-center space-x-2">
 			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
 			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">Oct 2025:</span> Started working on a new Full-stack Project
+			    </p>
+			</div>
+		    </li>
+		    <li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">Oct 2025:</span> Transitioned to HackTheBox for my cyber security path
+			    </p>
+			</div>
+		    </li>
+		    <li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
 				<span className="font-semibold">Sept 2025:</span> Attended VoxxedDays
 			    </p>
 			</div>

@@ -19,9 +19,10 @@ function Uptimedisplay() {
 		    const lastUp = monitor.logs?.find(l => l.type === 1 && l.reason?.code === 200)?.datetime;
 		    const startTime = lastUp ? lastUp * 1000 : monitor.create_datetime * 1000;
 		    const diff = Date.now() - startTime;
-		    const hours = Math.floor(diff/(1000*60*60));
+		    const days = Math.floor(diff/(1000*60*60*24));
+		    const hours = Math.floor((diff/(1000*60*60)) % 24);
 		    const min = Math.floor((diff / (1000*60)) % 60);
-		    setUptime(`${hours}h ${min}m`);
+		    setUptime(`${days}d ${hours}h ${min}m`);
 		}
 	    });
     }, []);
