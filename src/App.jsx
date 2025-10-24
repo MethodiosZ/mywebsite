@@ -90,7 +90,7 @@ export default function App() {
 			    className="absolute inset-0 h-full w-full z-0"
 			    options={{
 				background: {color: {value: "transparent" } },
-				fpsLimit: 60,
+				fpsLimit: 30,
 				interactivity: {
 				    events: {onHover: { enable: true, mode: "repulse" } },
 				    modes: { repulse: { distance: 100, duration: 0.4 } },
