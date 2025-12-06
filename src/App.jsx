@@ -284,17 +284,18 @@ export default function App() {
 			whileHover={{ scale: 1.03 }}
 			className="p-6 bg-white dark:bg-gray-800 border rounded-2xl shadow hover:shadow-xl transition"
 		    >
-			<h4 className="text-xl font-semibold mb-2">Alpha Language Compiler</h4>
+			<h4 className="text-xl font-semibold mb-2">Simple Web App</h4>
 			<p className="mb-3 text-gray-700 dark:text-gray-300">
-			    A simple compiler for Alpha Programming Language written using <strong>Lex</strong>, <strong>Yacc</strong> and <strong>C</strong>.
+			    A simple CRUD full-stack web application written using <strong>React</strong>, <strong>Next.js</strong> and <strong>Java</strong>.
 			</p>
 			<div className="flex flex-wrap gap-2 mb-3">
-			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">C</span>
-			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Yacc</span>
-			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Lex</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">React</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Next.js</span>
+			    <span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">Java</span>
+				<span className="px-2 py-1 text-sm bg-blue-300 dark:bg-gray-700 rounded">PostgreSQL</span>
 			</div>
 			<div className="flex space-x-3">
-			    <a href="https://github.com/MethodiosZ/AlphaLanguageCompiler" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+			    <a href="https://github.com/MethodiosZ/SimpleWebApp" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
 				GitHub
 			    </a>
 			</div>
