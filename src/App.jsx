@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -166,6 +166,22 @@ export default function App() {
 		{/* Recent Updates */}
 		<h4 className="text-2xl py-4 font-semibold mb-4">Recent Updates</h4>
 		<ul className="space-y-4 border-l-2 border-blue-600 dark:border-blue-400 pl-4">
+			<li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">Dec 2025:</span> Created a Next.js template for building custom websites 
+			    </p>
+			</div>
+		    </li>
+			<li>
+			<div className="flex items-center space-x-2">
+			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
+			    <p className="text-gray-800 dark:text-gray-100">
+				<span className="font-semibold">Nov 2025:</span> Created a simple CRUD website
+			    </p>
+			</div>
+		    </li>
 		    <li>
 			<div className="flex items-center space-x-2">
 			    <span className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
